@@ -11,3 +11,41 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/*switch css*/
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+  background-color: #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s;
+}
+
+.switch-on {
+  background-color: #2196F3;
+}
+
+.switch-on .slider {
+  transform: translateX(20px);
+}
