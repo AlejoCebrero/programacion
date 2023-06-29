@@ -10,7 +10,9 @@ import TextInput from './components/widgets/InputText';
 import TextArea from './components/widgets/InputTextArea';
 import RadioButton from './components/widgets/RadioButton';
 import SwitchButton from './components/widgets/SwitchButton';
-
+import Autos from './components/clases/clases';
+import Escuela from './components/clases/class_escuela';
+import CuentaBancaria from './components/clases/class_banco';
 function App() {  
   //dropdown
   const options = [
@@ -42,6 +44,11 @@ function App() {
     console.log('Switch state:', checked);
   };
 
+  const alumnos = [
+    { nombre: 'Alumno 1' },
+    { nombre: 'Alumno 2' },
+    { nombre: 'Alumno 3' },
+  ];
   return (
     <div className="App">
       <TodoList />
@@ -77,6 +84,10 @@ function App() {
 
       <h1>Switch Button</h1>
       <SwitchButton onToggle={handleToggle} />
+      
+    <Autos />
+    <Escuela alumnos={alumnos}/>
+    <CuentaBancaria/>
     </div>
   );
 }
