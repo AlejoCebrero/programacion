@@ -13,6 +13,11 @@ import SwitchButton from './components/widgets/SwitchButton';
 import Autos from './components/clases/clases';
 import Escuela from './components/clases/class_escuela';
 import CuentaBancaria from './components/clases/class_banco';
+import Usuario from './components/clases/ejercicio3.2';
+import LoginForm from './components/clases/ejercicio3.3';
+import Clock from './components/clases/ejercicio3.4';
+import Gallery from './components/clases/ejercicio3.5';
+import Saludo from './components/clases/ejercicio3.1';
 function App() {  
   //dropdown
   const options = [
@@ -88,6 +93,11 @@ function App() {
     <Autos />
     <Escuela alumnos={alumnos}/>
     <CuentaBancaria/>
+    <Saludo nombre="Alejo"/>
+    <Usuario nombre="brian" edad="25" telefono="123123" email="asdf@gmail" />
+    <LoginForm/>
+    <Clock/>
+    <Gallery/>
     </div>
   );
 }
